@@ -34,3 +34,9 @@ sudo chattr -i /etc/passwd
 
 # Change time:
 sudo touch -a -m -t YYYYMMDDHHMM.SS filename
+
+- + - + - + - + - + - + - + - + - + - + - + - + 
+# Under Construction
+- + - + - + - + - + - + - + - + - + - + - + - + 
+
+# Adding / generating ssh keys
