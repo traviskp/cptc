@@ -1,3 +1,7 @@
+- + - + - + - + - + - + - + - + - + - + - + - + 
+# Red Team Tips / Tricks
+- + - + - + - + - + - + - + - + - + - + - + - + 
+
 # Host discovery
 nmap -sP ip
 
