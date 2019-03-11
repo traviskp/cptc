@@ -32,6 +32,9 @@ wget -m ftp://anonymous:anonymous@10.10.10.666/Program%20Data/
 # Grep folders for password  (-R recursive -i ignore case -A5 include 5 lines of text after)
 grep -R -i -A5 password .
 
+# Grep all files in current directory
+grep -R STRING *
+
 - + - + - + - + - + - + - + - + - + - + - + - + 
 # Hiding tracks / annoying blue team
 - + - + - + - + - + - + - + - + - + - + - + - + 
