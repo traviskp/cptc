@@ -17,6 +17,12 @@ sudo usermod -aG sudo username
 # Clear history: 
 sudo history -c
 
+# Python Simple HTTP Server
+python -m SimpleHTTPServer 8000
+
+# Net cat listener with rlwrap
+rlwrap nc -lvnp 9001
+
 # Upgrade shells:
 python -c 'import pty; pty.spawn("/bin/bash")'  
 
